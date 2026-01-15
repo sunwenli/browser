@@ -31,11 +31,10 @@ export default {
             if (uaData.platform === "Windows") {
                 const majorPlatformVersion = parseInt(uaData.platformVersion.split('.')[0]);
                 if(majorPlatformVersion>=13){
-                    windowsVersion = '11';
+                    version = '11';
                 }else{
-                    windowsVersion = '10';
+                    version = '10';
                 }
-                return windowsVersion;
             }
         }
         return version;
